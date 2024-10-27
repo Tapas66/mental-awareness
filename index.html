@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mental Health and Wellness resources for students, including wellness tips, team information, and contact details.">
+    <title>Mental Health and Wellness for Students</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Mental Health & Wellness</div>
+        <span class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation menu">☰</span>
+        <ul id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#statistics">Statistics Data</a></li>
+            <li><a href="#tips">Wellness Tips</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#connect">Connect</a></li>
+        </ul>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+    </header>
+
+    <!-- Sections -->
+    <section id="home" class="carousel">
+      <div class="carousel-slide active">
+          <img src="data:image/jpeg;base64,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" alt="Slide 1">
+          <div class="carousel-content">
+              <h2>Welcome to Mental Health and Wellness</h2>
+              <p>Find resources, tips, and support to help you thrive.</p>
+              <button onclick="window.location.href='#connect'">Learn More</button>
+          </div>
+      </div>
+      <div class="carousel-slide">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGc3oU-_7qrin6pvTnsvZ8GcecVl-t7lbLeA&s" alt="Slide 2">
+          <div class="carousel-content">
+              <h2>Your Well-Being Matters</h2>
+              <p>Explore tools to improve mental wellness.</p>
+              <button onclick="window.location.href='#tips'">Explore Tips</button>
+          </div>
+      </div>
+      <div class="carousel-slide">
+          <img src="https://images.inc.com/uploaded_files/image/1920x1080/shutterstock_619960997_360000.jpg" alt="Slide 3">
+          <div class="carousel-content">
+              <h2>Connect with Support</h2>
+              <p>Reach out to our team for guidance.</p>
+              <button onclick="window.location.href='#support'">Get Support</button>
+          </div>
+      </div>
+  </section>
+        <!-- Statistics Section -->
+        <section id="statistics">
+          <h2>Statistics Data</h2>
+          <p class="section-intro">Understanding the current state of mental health among students is crucial. Here, we present key data points on awareness, accessibility, and mental wellness among the student community.</p>
+          
+          <div class="chart-container">
+              <div class="chart">
+                  <h3>Awareness of Mental Health Resources</h3>
+                  <p>Data shows the percentage of students who are aware of the mental health resources available to them on campus and online.</p>
+                  <canvas id="mentalHealthPieChart"></canvas>
+              </div>
+  
+              <div class="chart">
+                  <h3>Stress Levels Among Students</h3>
+                  <p>This chart represents the distribution of stress levels among students, categorized from "Very Low" to "Very High."</p>
+                  <canvas id="stressLevelsBarChart"></canvas>
+              </div>
+  
+              <div class="chart">
+                  <h3>Accessibility of Mental Health Support</h3>
+                  <p>A line chart showing how students perceive the accessibility of mental health support over recent months.</p>
+                  <canvas id="supportAccessibilityLineChart"></canvas>
+              </div>
+  
+              <div class="chart">
+                  <h3>Sleep Quality Among Students</h3>
+                  <p>This chart displays the quality of sleep among students, categorized as Excellent, Good, Fair, and Poor.</p>
+                  <canvas id="sleepQualityDoughnutChart"></canvas>
+              </div>
+          </div>
+      </section>
+  
+<!-- Wellness Tips Section -->
+<section id="tips">
+  <h2>Wellness Tips</h2>
+  <p class="section-intro">Maintaining mental wellness is crucial for students. Here are some practical tips to help you stay balanced and healthy:</p>
+  
+  <div class="tips-container">
+      <div class="tip">
+          <i class="fas fa-spa tip-icon"></i>
+          <h3>Practice Mindfulness and Meditation</h3>
+          <p>Take a few minutes each day to practice mindfulness or meditation. This helps reduce stress and improves focus.</p>
+      </div>
+
+      <div class="tip">
+          <i class="fas fa-running tip-icon"></i>
+          <h3>Engage in Regular Physical Activity</h3>
+          <p>Exercise is a powerful way to boost your mood and energy levels. Aim for at least 30 minutes a day.</p>
+      </div>
+
+      <div class="tip">
+          <i class="fas fa-bed tip-icon"></i>
+          <h3>Prioritize Sleep Hygiene</h3>
+          <p>Ensure you get enough sleep. Aim for 7-9 hours each night and establish a calming bedtime routine.</p>
+      </div>
+
+      <div class="tip">
+          <i class="fas fa-users tip-icon"></i>
+          <h3>Stay Connected with Friends</h3>
+          <p>Socializing is vital for mental health. Make time to connect with friends, whether in person or virtually.</p>
+      </div>
+
+      <div class="tip">
+          <i class="fas fa-apple-alt tip-icon"></i>
+          <h3>Maintain a Healthy Diet</h3>
+          <p>Fuel your body with nutritious foods. A balanced diet can greatly impact your mood and energy levels.</p>
+      </div>
+  </div>
+</section>
+<!-- Team Section -->
+<section id="team">
+  <h2>Meet Our Team</h2>
+  <p class="section-intro">Our dedicated team is here to support you in your journey towards mental health and wellness.</p>
+  
+  <div class="team-container">
+      <div class="team-member" data-aos="fade-up">
+          <img src="https://www.aiscribbles.com/img/variant/large-preview/9570/?v=5528a6" alt="Team Member 1" class="team-image">
+          <h3>Tapas Pandey</h3>
+          <p class="role">Mental Health Counselor</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia optio impedit nihil quam consequatur nisi, laborum facere excepturi repellendus eos voluptatum aut dolorem commodi tenetur deserunt, eius enim, voluptates aspernatur?</p>
+      </div>
+
+      <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://www.aiscribbles.com/img/variant/large-preview/9570/?v=5528a6" alt="Team Member 2" class="team-image">
+          <h3>Member 2</h3>
+          <p class="role">Wellness Coach</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, nostrum perferendis! Quidem ipsum, nobis at corrupti blanditiis deserunt inventore earum recusandae alias fugit repellat expedita!</p>
+      </div>
+
+      <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://www.aiscribbles.com/img/variant/large-preview/9570/?v=5528a6" alt="Team Member 3" class="team-image">
+          <h3>Member 3</h3>
+          <p class="role">Psychology Intern</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, minima molestias voluptatum amet facere beatae illum deserunt ratione eius, enim cum labore expedita ea? Explicabo.
+          </p>
+      </div>
+
+      <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+          <img src="https://www.aiscribbles.com/img/variant/large-preview/9570/?v=5528a6" alt="Team Member 4" class="team-image">
+          <h3>Member 4</h3>
+          <p class="role">Community Outreach Coordinator</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit hic molestiae nemo deserunt? Rerum quis quia deleniti! Quo, assumenda reprehenderit?</p>
+      </div>
+      <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://www.aiscribbles.com/img/variant/large-preview/9570/?v=5528a6" alt="Team Member 4" class="team-image">
+        <h3>Member 5</h3>
+        <p class="role">Community Outreach Coordinator</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa cupiditate nisi veniam possimus neque porro laudantium iusto quisquam placeat praesentium?</p>
+    </div>
+    <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+      <img src="https://www.aiscribbles.com/img/variant/large-preview/9570/?v=5528a6" alt="Team Member 4" class="team-image">
+      <h3>Member 6</h3>
+      <p class="role">Community Outreach Coordinator</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa cupiditate nisi veniam possimus neque porro laudantium iusto quisquam placeat praesentium?</p>
+  </div>
+  </div>
+</section>
+
+
+
+    <!-- Contact Us Section -->
+<section id="contact" class="contact-section">
+  <div class="background-animation">
+      <!-- Add animated figures or objects here -->
+      <div class="animated-headphones"></div>
+      <div class="animated-figure"></div>
+      <div class="animated-music-player"></div>
+  </div>
+  <div class="content">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+      </form>
+      <div id="response-message" class="popup"></div>
+  </div>
+</section>
+
+
+    <!-- Footer Section -->
+<footer>
+  <div class="footer-container">
+      <div class="social-media">
+          <a href="https://www.instagram.com/" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram" /></a>
+          <a href="https://twitter.com/" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="Twitter" /></a>
+          <a href="https://wa.me/yourwhatsappnumber" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" /></a>
+      </div>
+      <nav class="footer-nav">
+          <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#statistics">Statistics</a></li>
+              <li><a href="#wellness-tips">Wellness Tips</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+          </ul>
+      </nav>
+      <p>&copy; 2024 Tapas Pandey.  All Rights Reserved.</p>
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init(); // Initialize AOS
+</script>
+
+</body>
+</html>
